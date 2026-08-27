@@ -1,14 +1,23 @@
-# Casa Guardians Website
+# Casa Guardians Website — Portfolio Version
 
-Static website starter for Casa Guardians.
+This version uses real content and project images from the Casa Guardians portfolio.
 
-## Files
-- `index.html` – page content
-- `style.css` – design and responsive layout
-- `script.js` – mobile navigation
+## Upload to GitHub
+Replace the existing files in your `casa-guardians-website` repository with:
 
-## Next steps
-1. Upload these files to the GitHub repository.
-2. Connect the repository to Cloudflare Pages.
-3. Replace placeholder blocks with real Casa Guardians project photos.
-4. Connect a custom domain.
+- `index.html`
+- `style.css`
+- `script.js`
+- `README.md`
+- the complete `assets` folder
+
+GitHub Pages will update automatically after the commit.
+
+## Included
+- Casa Guardians logo
+- Real portfolio project images
+- Services and portfolio descriptions
+- Team section
+- WhatsApp, email, phone and Facebook links
+- Responsive mobile layout
+- Scroll reveal / slide-in animations

@@ -3,25 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Casa Guardians – Painting, renovation and property maintenance on the Costa del Sol." />
+  <meta name="description" content="Casa Guardians — professional painting, decorative finishes, renovation and property maintenance across the Costa del Sol." />
+  <meta name="theme-color" content="#f4f0e8" />
   <title>Casa Guardians | Painting & Renovation Costa del Sol</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container nav-wrap">
-      <a href="#home" class="brand">
-        <span class="brand-mark">CG</span>
-        <span class="brand-text">Casa Guardians</span>
+      <a class="brand" href="#home" aria-label="Casa Guardians home">
+        <img src="assets/logo.png" alt="Casa Guardians logo" class="brand-logo" />
+        <span class="brand-name">Casa Guardians</span>
       </a>
-      <button class="menu-toggle" aria-label="Open menu">☰</button>
-      <nav class="nav">
+
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" aria-label="Primary navigation">
         <a href="#services">Services</a>
-        <a href="#work">Our Work</a>
-        <a href="#about">About Us</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About us</a>
         <a href="#contact">Contact</a>
         <a class="nav-cta" href="https://wa.me/34678718052" target="_blank" rel="noopener">WhatsApp</a>
       </nav>
@@ -31,168 +36,222 @@
   <main>
     <section class="hero" id="home">
       <div class="container hero-grid">
-        <div class="hero-copy">
+        <div class="hero-copy reveal reveal-left">
           <p class="eyebrow">PAINTING • RENOVATION • PROPERTY MAINTENANCE</p>
-          <h1>Beautiful spaces.<br><span>Reliable hands.</span></h1>
+          <h1>We renovate<br><em>dreams.</em></h1>
           <p class="hero-text">
-            Professional painting, decorative finishes and property maintenance
-            across the Costa del Sol.
+            Professional painting, decorating and renovation services across the Costa del Sol — with quality workmanship, attention to detail and a personal approach.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#contact">Request a quote</a>
-            <a class="button secondary" href="#work">See our work</a>
+            <a class="button secondary" href="#projects">View projects</a>
           </div>
-          <div class="hero-points">
-            <span>✓ 10+ years experience</span>
-            <span>✓ Free consultation</span>
-            <span>✓ Costa del Sol</span>
+          <div class="trust-row">
+            <div><strong>10+</strong><span>years of experience</span></div>
+            <div><strong>Local</strong><span>Costa del Sol service</span></div>
+            <div><strong>Hands-on</strong><span>personal approach</span></div>
           </div>
         </div>
 
-        <div class="hero-visual">
-          <div class="hero-photo placeholder">
-            <div>
-              <strong>Your best project photo</strong>
-              <span>We’ll replace this with one of your real before/after images.</span>
-            </div>
-          </div>
-          <div class="floating-card">
-            <span class="small-label">OUR PROMISE</span>
-            <strong>Clear communication.<br>Clean, precise work.</strong>
+        <div class="hero-media reveal reveal-right" style="--delay: 100ms">
+          <img src="assets/hero-velvet.webp" alt="Velvet-effect decorative feature wall by Casa Guardians" />
+          <div class="hero-tag">
+            <span>Signature finish</span>
+            <strong>Velvet Effect</strong>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="intro">
-      <div class="container intro-grid">
-        <p class="section-kicker">CASA GUARDIANS</p>
-        <h2>We take care of the details, so your property feels like home.</h2>
-        <p>
-          From a fresh coat of paint to decorative feature walls and small renovation projects,
-          we combine craftsmanship with reliable, hands-on service.
+    <section class="statement">
+      <div class="container statement-grid">
+        <p class="section-kicker reveal reveal-up">CASA GUARDIANS</p>
+        <h2 class="reveal reveal-up" style="--delay: 80ms">Craftsmanship, reliability and care — from the first conversation to the finishing touches.</h2>
+        <p class="statement-copy reveal reveal-up" style="--delay: 160ms">
+          Alongside general painting and renovation, we specialise in decorative wall finishes that add texture, warmth and a distinctive high-end look.
         </p>
       </div>
     </section>
 
-    <section class="services section" id="services">
+    <section class="section services" id="services">
       <div class="container">
-        <div class="section-heading">
+        <div class="section-heading reveal reveal-up">
           <div>
             <p class="section-kicker">WHAT WE DO</p>
             <h2>Services</h2>
           </div>
-          <p>For homes, holiday rentals and investment properties.</p>
+          <p>For homeowners, landlords, rental properties and commercial spaces.</p>
         </div>
 
         <div class="service-grid">
-          <article class="service-card">
-            <span>01</span>
-            <h3>Interior Painting</h3>
-            <p>Fresh, clean finishes with careful preparation and protection of your home.</p>
+          <article class="service-card reveal reveal-up" style="--delay: 0ms">
+            <span class="service-no">01</span>
+            <h3>Painting & Decorating</h3>
+            <p>Interior painting, refresh painting and decorative wall finishes, with careful preparation and attention to detail.</p>
           </article>
-          <article class="service-card">
-            <span>02</span>
-            <h3>Surface Preparation</h3>
-            <p>Filling, smoothing and preparing walls for a long-lasting professional result.</p>
+          <article class="service-card reveal reveal-up" style="--delay: 90ms">
+            <span class="service-no">02</span>
+            <h3>Renovation</h3>
+            <p>Property refreshes and renovation works, including surface repairs, doors, woodwork and finishing touches.</p>
           </article>
-          <article class="service-card">
-            <span>03</span>
-            <h3>Decorative Walls</h3>
-            <p>Velvet, sand-effect and other premium finishes for statement walls with character.</p>
-          </article>
-          <article class="service-card">
-            <span>04</span>
-            <h3>Minor Renovation</h3>
-            <p>Practical improvements and small renovation projects, coordinated with care.</p>
-          </article>
-          <article class="service-card">
-            <span>05</span>
+          <article class="service-card reveal reveal-up" style="--delay: 180ms">
+            <span class="service-no">03</span>
             <h3>Property Maintenance</h3>
-            <p>Reliable help with small repairs and maintenance for local and overseas owners.</p>
-          </article>
-          <article class="service-card">
-            <span>06</span>
-            <h3>Holiday Rental Support</h3>
-            <p>Fast repairs and refresh work between guest stays to keep your property ready.</p>
+            <p>Small repairs, air-conditioning cleaning and ongoing maintenance for homeowners, landlords and rental properties.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="feature section">
+    <section class="section feature-section">
       <div class="container feature-grid">
-        <div class="feature-photo placeholder dark">
-          <div>
-            <strong>Decorative finish photo</strong>
-            <span>Perfect place for your velvet-effect wall.</span>
-          </div>
+        <div class="feature-media reveal reveal-left">
+          <img src="assets/giveaway-green.webp" alt="Green velvet-effect wall finished by Casa Guardians" />
         </div>
-        <div class="feature-copy">
-          <p class="section-kicker">DECORATIVE FINISHES</p>
-          <h2>Walls that do more than just add colour.</h2>
+        <div class="feature-copy reveal reveal-right" style="--delay: 100ms">
+          <p class="section-kicker">DECORATIVE WALLS</p>
+          <h2>More than colour.<br>Texture, depth and character.</h2>
           <p>
-            Decorative finishes can completely change the atmosphere of a room.
-            We create elegant feature walls with depth, texture and a premium feel.
+            Our signature Velvet Effect is admired for its elegant texture, timeless style and luxurious appearance — creating a striking finish without making a space feel overdone.
           </p>
-          <a class="text-link" href="#contact">Ask about decorative walls →</a>
+          <a class="text-link" href="#contact">Ask about decorative finishes <span>→</span></a>
         </div>
       </div>
     </section>
 
-    <section class="work section" id="work">
+    <section class="section projects" id="projects">
       <div class="container">
-        <div class="section-heading">
+        <div class="section-heading reveal reveal-up">
           <div>
-            <p class="section-kicker">BEFORE & AFTER</p>
-            <h2>Recent work</h2>
+            <p class="section-kicker">SELECTED PROJECTS</p>
+            <h2>Our work</h2>
           </div>
-          <p>Real projects will go here — no stock photos needed.</p>
+          <p>Real projects, real finishes — a selection from our portfolio.</p>
         </div>
-        <div class="work-grid">
-          <div class="work-card placeholder"><span>Project photo 1</span></div>
-          <div class="work-card placeholder"><span>Project photo 2</span></div>
-          <div class="work-card placeholder"><span>Project photo 3</span></div>
+
+        <div class="projects-grid">
+          <article class="project-card project-large reveal reveal-up">
+            <div class="project-image">
+              <img src="assets/hero-velvet.webp" alt="Family home refresh with velvet-effect wall" />
+            </div>
+            <div class="project-content">
+              <p class="project-type">Decorative finish</p>
+              <h3>Family Home Refresh with Velvet-Effect Wall</h3>
+              <p>A soft minimal beige throughout the space, finished with a decorative velvet feature wall for warmth and an elegant final look.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal reveal-up" style="--delay: 80ms">
+            <div class="project-image split-image">
+              <img src="assets/kiralyhalmi-detail.webp" alt="Decorative wall detail at Királyhalmi Beauty" />
+              <img src="assets/kiralyhalmi-teal.webp" alt="Renovated commercial wall at Királyhalmi Beauty" />
+            </div>
+            <div class="project-content">
+              <p class="project-type">Complete renovation</p>
+              <h3>Királyhalmi Beauty</h3>
+              <p>Complete renovation and fit-out of a beauty salon, including suspended ceiling, drywall partitions, flooring, painting and decorative finishing.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal reveal-up">
+            <div class="project-image">
+              <img src="assets/giveaway-green.webp" alt="Green velvet-effect giveaway wall makeover" />
+            </div>
+            <div class="project-content">
+              <p class="project-type">Velvet Effect</p>
+              <h3>Giveaway Winner’s Wall Makeover</h3>
+              <p>A green velvet-effect finish transformed the wall into a fresh, stylish and distinctive feature.</p>
+            </div>
+          </article>
+
+          <article class="project-card reveal reveal-up" style="--delay: 80ms">
+            <div class="project-image before-after">
+              <figure>
+                <img src="assets/wall-restoration-before.webp" alt="Wall after wallpaper removal before restoration" />
+                <figcaption>Before</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/wall-restoration-after.webp" alt="Restored wall after skim coating and painting" />
+                <figcaption>After</figcaption>
+              </figure>
+            </div>
+            <div class="project-content">
+              <p class="project-type">Surface restoration</p>
+              <h3>Wall Restoration After Wallpaper Removal</h3>
+              <p>Uneven walls were repaired and skim-coated to create a smooth surface, then completed with a fresh coat of paint.</p>
+            </div>
+          </article>
+
+          <article class="project-card project-wide reveal reveal-up">
+            <div class="project-image before-after">
+              <figure>
+                <img src="assets/commercial-before.webp" alt="Plasterboard partition wall before finishing" />
+                <figcaption>Before</figcaption>
+              </figure>
+              <figure>
+                <img src="assets/commercial-after.webp" alt="Commercial space renovation after painting" />
+                <figcaption>After</figcaption>
+              </figure>
+            </div>
+            <div class="project-content">
+              <p class="project-type">Commercial renovation</p>
+              <h3>Commercial Space Renovation</h3>
+              <p>New plasterboard partition walls were built and prepared for a smooth, durable finish, then completed with a bold modern colour.</p>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="about section" id="about">
-      <div class="container about-grid">
-        <div>
+    <section class="section about" id="about">
+      <div class="container about-intro">
+        <div class="reveal reveal-left">
           <p class="section-kicker">ABOUT US</p>
-          <h2>A small team you can actually reach.</h2>
+          <h2>A small team.<br>A personal service.</h2>
         </div>
-        <div class="about-copy">
+        <div class="about-copy reveal reveal-right" style="--delay: 100ms">
           <p>
-            Casa Guardians is run by Dorottya and Ádám. Ádám brings more than 10 years of
-            professional painting and renovation experience, while Dorottya handles communication,
-            organisation and customer care.
+            At Casa Guardians, we provide professional painting, decorating and renovation services, helping to transform homes with quality workmanship and attention to detail.
           </p>
           <p>
-            We believe good work starts with clear communication, realistic expectations and
-            treating every property with respect.
+            Based in Benalmádena, we proudly serve clients throughout the Costa del Sol with precision, reliability and a personal approach.
           </p>
-          <div class="stats">
-            <div><strong>10+</strong><span>Years of experience</span></div>
-            <div><strong>2</strong><span>People, one accountable team</span></div>
-            <div><strong>100%</strong><span>Hands-on service</span></div>
+        </div>
+      </div>
+
+      <div class="container team-grid">
+        <article class="team-card reveal reveal-up">
+          <div class="team-photo"><img src="assets/adam.webp" alt="Ádám Girst, Casa Guardians" /></div>
+          <div class="team-info">
+            <p class="role">Painting & Renovation</p>
+            <h3>Ádám Girst</h3>
+            <p>Over ten years of experience in painting and renovation, including team leadership, with a practical and detail-focused approach to every project.</p>
           </div>
-        </div>
+        </article>
+
+        <article class="team-card reveal reveal-up" style="--delay: 100ms">
+          <div class="team-photo"><img src="assets/dorottya.webp" alt="Dorottya Éliás, Casa Guardians" /></div>
+          <div class="team-info">
+            <p class="role">Organisation & Customer Care</p>
+            <h3>Dorottya Éliás</h3>
+            <p>Bringing experience in administration and hospitality, Dorottya is involved in both the business side and renovation projects, with a focus on communication and organisation.</p>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section class="contact section" id="contact">
-      <div class="container contact-card">
+    <section class="contact-section" id="contact">
+      <div class="container contact-card reveal reveal-up">
         <div>
-          <p class="section-kicker light">LET'S TALK</p>
-          <h2>Tell us what you’d like to change.</h2>
-          <p>Send us a few photos and a short description of the job. We’ll get back to you as soon as possible.</p>
+          <p class="section-kicker light">LET'S WORK TOGETHER</p>
+          <h2>Thinking about refreshing your property?</h2>
+          <p>Send us a few photos and a short description of the work. We’ll be happy to discuss the possibilities.</p>
         </div>
         <div class="contact-actions">
           <a class="button light-btn" href="https://wa.me/34678718052" target="_blank" rel="noopener">Message us on WhatsApp</a>
           <a class="contact-link" href="mailto:casaguardians@gmail.com">casaguardians@gmail.com</a>
           <a class="contact-link" href="tel:+34678718052">+34 678 71 80 52</a>
+          <a class="contact-link" href="https://facebook.com/casaguardians" target="_blank" rel="noopener">Facebook: Casa Guardians</a>
         </div>
       </div>
     </section>
@@ -200,12 +259,15 @@
 
   <footer>
     <div class="container footer-wrap">
-      <div>
-        <strong>Casa Guardians</strong>
-        <p>Painting • Renovation • Property Maintenance</p>
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="" aria-hidden="true" />
+        <div>
+          <strong>Casa Guardians</strong>
+          <p>Painting • Renovation • Property Maintenance</p>
+        </div>
       </div>
-      <div class="footer-right">
-        <span>Costa del Sol</span>
+      <div class="footer-meta">
+        <span>Benalmádena • Costa del Sol</span>
         <span>© 2026 Casa Guardians</span>
       </div>
     </div>
