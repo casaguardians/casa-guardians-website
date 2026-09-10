@@ -51,11 +51,10 @@ contactForm?.addEventListener("submit", (event) => {
     `How can I help?\n${data.get("message")}`
   );
 
-  const gmailUrl =
-  `https://mail.google.com/mail/?view=cm&fs=1` +
-  `&to=${CONTACT_EMAIL}` +
-  `&su=${subject}` +
-  `&body=${body}`;
+    const mailtoUrl =
+    `mailto:${CONTACT_EMAIL}` +
+    `?subject=${subject}` +
+    `&body=${body}`;
 
-window.open(gmailUrl, "_blank");
+  window.location.href = mailtoUrl;
 });
