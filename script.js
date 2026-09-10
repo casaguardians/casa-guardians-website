@@ -70,11 +70,3 @@ contactForm?.addEventListener("submit", async (event) => {
       "Something went wrong. Please contact us by WhatsApp.";
   }
 });
-
-    const mailtoUrl =
-    `mailto:${CONTACT_EMAIL}` +
-    `?subject=${subject}` +
-    `&body=${body}`;
-
-  window.location.href = mailtoUrl;
-});
