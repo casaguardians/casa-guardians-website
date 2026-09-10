@@ -32,24 +32,44 @@ if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-mot
 } else {
   revealItems.forEach((item) => item.classList.add('is-visible'));
 }
-const CONTACT_EMAIL = "info@dorotheaconcierge.com";
-
 const contactForm = document.querySelector(".contact-form");
 
-contactForm?.addEventListener("submit", (event) => {
+contactForm?.addEventListener("submit", async (event) => {
   event.preventDefault();
 
+  const status = contactForm.querySelector(".form-status");
   const data = new FormData(contactForm);
 
-  const subject = encodeURIComponent("Private enquiry — Dorothea");
+  data.append("_subject", "Private enquiry — Dorothea");
+  data.append("_captcha", "false");
+  data.append("_template", "table");
 
-  const body = encodeURIComponent(
-    `Name: ${data.get("name")}\n` +
-    `Contact: ${data.get("contact")}\n` +
-    `Property location: ${data.get("location")}\n` +
-    `Service: ${data.get("service")}\n\n` +
-    `How can I help?\n${data.get("message")}`
-  );
+  status.textContent = "Sending your enquiry...";
+
+  try {
+    const response = await fetch(
+      "https://formsubmit.co/ajax/info@dorotheaconcierge.com",
+      {
+        method: "POST",
+        body: data,
+        headers: {
+          Accept: "application/json"
+        }
+      }
+    );
+
+    if (!response.ok) {
+      throw new Error("Sending failed");
+    }
+
+    contactForm.reset();
+    status.textContent =
+      "Thank you. Your enquiry has been sent successfully.";
+  } catch (error) {
+    status.textContent =
+      "Something went wrong. Please contact us by WhatsApp.";
+  }
+});
 
     const mailtoUrl =
     `mailto:${CONTACT_EMAIL}` +
