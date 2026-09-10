@@ -32,3 +32,25 @@ if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-mot
 } else {
   revealItems.forEach((item) => item.classList.add('is-visible'));
 }
+const CONTACT_EMAIL = "info@dorotheaconcierge.com";
+
+const contactForm = document.querySelector(".contact-form");
+
+contactForm?.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const data = new FormData(contactForm);
+
+  const subject = encodeURIComponent("Private enquiry — Dorothea");
+
+  const body = encodeURIComponent(
+    `Name: ${data.get("name")}\n` +
+    `Contact: ${data.get("contact")}\n` +
+    `Property location: ${data.get("location")}\n` +
+    `Service: ${data.get("service")}\n\n` +
+    `How can I help?\n${data.get("message")}`
+  );
+
+  window.location.href =
+    `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
+});
