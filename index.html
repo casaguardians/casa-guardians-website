@@ -4,14 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Casa Guardians — professional painting, decorative finishes, renovation and property maintenance across the Costa del Sol." />
-  <meta name="theme-color" content="#f4f0e8" />
+  <meta name="theme-color" content="#f4efe7" />
+  <link rel="canonical" href="https://casaguardians.com/" />
+  <link rel="icon" href="logo.png" />
+  <link rel="preload" as="image" href="hero-villa.png" />
   <title>Casa Guardians | Painting & Renovation Costa del Sol</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
     <div class="container nav-wrap">
       <a class="brand" href="#home" aria-label="Casa Guardians home">
@@ -19,49 +23,36 @@
         <span class="brand-name">Casa Guardians</span>
       </a>
 
-      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
         <span></span><span></span><span></span>
       </button>
 
-      <nav class="nav" aria-label="Primary navigation">
+      <nav id="primary-nav" class="nav" aria-label="Primary navigation">
         <a href="#services">Services</a>
         <a href="#projects">Projects</a>
         <a href="#about">About us</a>
         <a href="#contact">Contact</a>
-        <a class="nav-cta" href="https://wa.me/34678718052" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="nav-cta" href="#contact">Request a quote</a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero" id="home">
-      <div class="container hero-grid">
-        <div class="hero-copy reveal reveal-left">
-          <p class="eyebrow">PAINTING • RENOVATION • PROPERTY MAINTENANCE</p>
-          <h1>We renovate<br><em>dreams.</em></h1>
-          <p class="hero-text">
-            Professional painting, decorating and renovation services across the Costa del Sol — with quality workmanship, attention to detail and a personal approach.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#contact">Request a quote</a>
-            <a class="button secondary" href="#projects">View projects</a>
-          </div>
-          <div class="trust-row">
-            <div><strong>10+</strong><span>years of experience</span></div>
-            <div><strong>Local</strong><span>Costa del Sol service</span></div>
-            <div><strong>Hands-on</strong><span>personal approach</span></div>
-          </div>
+      <img class="hero-background" src="hero-villa.png" alt="Mediterranean villa beside an illuminated pool at dusk" fetchpriority="high" width="1672" height="941" />
+      <div class="hero-shade"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">PAINTING & RENOVATION · COSTA DEL SOL</p>
+        <h1>We renovate<br><em>dreams.</em></h1>
+        <p class="hero-text">Thoughtful finishes. Careful craftsmanship.<br>Painting, decorating and property care, with a personal touch.</p>
+        <div class="hero-actions">
+          <a class="button light-btn" href="#contact">Request a free quote</a>
+          <a class="button hero-outline" href="#projects">Explore our work</a>
         </div>
-
-        <div class="hero-media reveal reveal-right" style="--delay: 100ms">
-          <img src="hero-velvet.webp" alt="Velvet-effect decorative feature wall by Casa Guardians" />
-          <div class="hero-tag">
-            <span>Signature finish</span>
-            <strong>Velvet Effect</strong>
-          </div>
-        </div>
+        <p class="hero-footnote">YOUR HOME. OUR CRAFT. EVERY DETAIL.</p>
       </div>
     </section>
+    <div class="credentials"><div class="container credentials-inner"><span><strong>10+ years</strong> of experience</span><span>Free on-site assessment</span><span>Based in Benalmádena</span></div></div>
 
     <section class="statement">
       <div class="container statement-grid">
@@ -106,7 +97,7 @@
     <section class="section feature-section">
       <div class="container feature-grid">
         <div class="feature-media reveal reveal-left">
-          <img src="giveaway-green.webp" alt="Green velvet-effect wall finished by Casa Guardians" />
+          <img loading="lazy" src="giveaway-green.webp" alt="Green velvet-effect wall finished by Casa Guardians" />
         </div>
         <div class="feature-copy reveal reveal-right" style="--delay: 100ms">
           <p class="section-kicker">DECORATIVE WALLS</p>
@@ -132,7 +123,7 @@
         <div class="projects-grid">
           <article class="project-card project-large reveal reveal-up">
             <div class="project-image">
-              <img src="hero-velvet.webp" alt="Family home refresh with velvet-effect wall" />
+              <img loading="lazy" src="hero-velvet.webp" alt="Family home refresh with velvet-effect wall" />
             </div>
             <div class="project-content">
               <p class="project-type">Decorative finish</p>
@@ -143,8 +134,8 @@
 
           <article class="project-card reveal reveal-up" style="--delay: 80ms">
             <div class="project-image split-image">
-              <img src="kiralyhalmi-detail.webp" alt="Decorative wall detail at Királyhalmi Beauty" />
-              <img src="kiralyhalmi-teal.webp" alt="Renovated commercial wall at Királyhalmi Beauty" />
+              <img loading="lazy" src="kiralyhalmi-detail.webp" alt="Decorative wall detail at Királyhalmi Beauty" />
+              <img loading="lazy" src="kiralyhalmi-teal.webp" alt="Renovated commercial wall at Királyhalmi Beauty" />
             </div>
             <div class="project-content">
               <p class="project-type">Complete renovation</p>
@@ -155,7 +146,7 @@
 
           <article class="project-card reveal reveal-up">
             <div class="project-image">
-              <img src="giveaway-green.webp" alt="Green velvet-effect giveaway wall makeover" />
+              <img loading="lazy" src="giveaway-green.webp" alt="Green velvet-effect giveaway wall makeover" />
             </div>
             <div class="project-content">
               <p class="project-type">Velvet Effect</p>
@@ -167,11 +158,11 @@
           <article class="project-card reveal reveal-up" style="--delay: 80ms">
             <div class="project-image before-after">
               <figure>
-                <img src="wall-restoration-before.webp" alt="Wall after wallpaper removal before restoration" />
+                <img loading="lazy" src="wall-restoration-before.webp" alt="Wall after wallpaper removal before restoration" />
                 <figcaption>Before</figcaption>
               </figure>
               <figure>
-                <img src="wall-restoration-after.webp" alt="Restored wall after skim coating and painting" />
+                <img loading="lazy" src="wall-restoration-after.webp" alt="Restored wall after skim coating and painting" />
                 <figcaption>After</figcaption>
               </figure>
             </div>
@@ -185,11 +176,11 @@
           <article class="project-card project-wide reveal reveal-up">
             <div class="project-image before-after">
               <figure>
-                <img src="commercial-before.webp" alt="Plasterboard partition wall before finishing" />
+                <img loading="lazy" src="commercial-before.webp" alt="Plasterboard partition wall before finishing" />
                 <figcaption>Before</figcaption>
               </figure>
               <figure>
-                <img src="commercial-after.webp" alt="Commercial space renovation after painting" />
+                <img loading="lazy" src="commercial-after.webp" alt="Commercial space renovation after painting" />
                 <figcaption>After</figcaption>
               </figure>
             </div>
@@ -221,7 +212,7 @@
 
       <div class="container team-grid">
         <article class="team-card reveal reveal-up">
-          <div class="team-photo"><img src="adam.webp" alt="Ádám Girst, Casa Guardians" /></div>
+          <div class="team-photo"><img loading="lazy" src="adam.webp" alt="Ádám Girst, Casa Guardians" /></div>
           <div class="team-info">
             <p class="role">Painting & Renovation</p>
             <h3>Ádám Girst</h3>
@@ -230,7 +221,7 @@
         </article>
 
         <article class="team-card reveal reveal-up" style="--delay: 100ms">
-          <div class="team-photo"><img src="dorottya.webp" alt="Dorottya Éliás, Casa Guardians" /></div>
+          <div class="team-photo"><img loading="lazy" src="dorottya.webp" alt="Dorottya Éliás, Casa Guardians" /></div>
           <div class="team-info">
             <p class="role">Organisation & Customer Care</p>
             <h3>Dorottya Éliás</h3>
@@ -240,19 +231,48 @@
       </div>
     </section>
 
-    <section class="contact-section" id="contact">
-      <div class="container contact-card reveal reveal-up">
-        <div>
-          <p class="section-kicker light">LET'S WORK TOGETHER</p>
-          <h2>Thinking about refreshing your property?</h2>
-          <p>Send us a few photos and a short description of the work. We’ll be happy to discuss the possibilities.</p>
+    <section class="contact-section section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <p class="section-kicker">LET’S CREATE SOMETHING BEAUTIFUL</p>
+          <h2>Tell us about<br><em>your home.</em></h2>
+          <p>A fresh coat of paint, a feature wall or a property refresh. Tell us what you have in mind and we’ll discuss the next steps.</p>
+          <p>We offer a free on-site assessment and a clear quote before work begins.</p>
+          <a class="button primary" href="https://wa.me/34678718052" target="_blank" rel="noopener">Message us on WhatsApp</a>
+          <div class="contact-details">
+            <a href="mailto:casaguardians@gmail.com">casaguardians@gmail.com</a>
+            <a href="tel:+34678718052">+34 678 71 80 52</a>
+            <span>Benalmádena · Costa del Sol</span>
+            <a href="https://facebook.com/casaguardians" target="_blank" rel="noopener">Find us on Facebook</a>
+          </div>
         </div>
-        <div class="contact-actions">
-          <a class="button light-btn" href="https://wa.me/34678718052" target="_blank" rel="noopener">Message us on WhatsApp</a>
-          <a class="contact-link" href="mailto:casaguardians@gmail.com">casaguardians@gmail.com</a>
-          <a class="contact-link" href="tel:+34678718052">+34 678 71 80 52</a>
-          <a class="contact-link" href="https://facebook.com/casaguardians" target="_blank" rel="noopener">Facebook: Casa Guardians</a>
-        </div>
+        <form class="quote-form" id="quote-form" action="https://formsubmit.co/casaguardians@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New quote request — Casa Guardians">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://casaguardians.com/thank-you.html">
+          <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="form-heading">Request a quote</p>
+          <p class="form-intro">Fields marked * are required.</p>
+          <div class="form-row">
+            <label for="name">Your name *<input id="name" name="name" autocomplete="name" maxlength="120" required></label>
+            <label for="email">Email address *<input id="email" type="email" name="email" autocomplete="email" maxlength="200" required></label>
+          </div>
+          <div class="form-row">
+            <label for="phone">Phone / WhatsApp<input id="phone" type="tel" name="phone" autocomplete="tel" maxlength="40"></label>
+            <label for="location">Property town / area *<input id="location" name="location" autocomplete="address-level2" maxlength="160" required></label>
+          </div>
+          <label for="service">What would you like help with? *<select id="service" name="service" required>
+            <option value="">Select a service</option><option>Painting & decorating</option><option>Decorative wall finish</option><option>Renovation</option><option>Property maintenance</option><option>Air-conditioning cleaning</option><option>Not sure yet</option>
+          </select></label>
+          <label for="timing">Preferred timing<input id="timing" name="timing" placeholder="For example, October or flexible" maxlength="120"></label>
+          <label for="message">Tell us about the work *<textarea id="message" name="message" rows="4" maxlength="5000" required placeholder="Rooms, approximate size and the finish you have in mind…"></textarea></label>
+          <p class="form-intro">Have photos? You can send them to us on WhatsApp. Please avoid including people or personal documents.</p>
+          <label class="checkbox-label" for="privacy"><input id="privacy" type="checkbox" name="privacy_notice_read" value="Yes — privacy notice read" required><span>I have read the <a href="privacy.html" target="_blank" rel="noopener">Privacy Policy</a>. *</span></label>
+          <p class="privacy-summary">Ádám Girst (Casa Guardians) uses your details to respond and prepare your quote, taking steps at your request before a contract. FormSubmit processes the form and our email provider receives it; processing may take place outside the EEA. You can request access, correction or deletion by email. See our <a href="privacy.html">Privacy Policy</a>.</p>
+          <button class="button primary" type="submit">Send quote request <span aria-hidden="true">↗</span></button>
+          <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
       </div>
     </section>
   </main>
@@ -260,7 +280,7 @@
   <footer>
     <div class="container footer-wrap">
       <div class="footer-brand">
-        <img src="logo.png" alt="" aria-hidden="true" />
+        <img loading="lazy" src="logo.png" alt="" aria-hidden="true" />
         <div>
           <strong>Casa Guardians</strong>
           <p>Painting • Renovation • Property Maintenance</p>
@@ -269,6 +289,7 @@
       <div class="footer-meta">
         <span>Benalmádena • Costa del Sol</span>
         <span>© 2026 Casa Guardians</span>
+        <a href="privacy.html">Privacy Policy</a>
       </div>
     </div>
   </footer>
