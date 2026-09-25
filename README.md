@@ -7,7 +7,7 @@ A Dorothea Concierge mintájára átdolgozott, angol nyelvű, statikus weboldal.
 1. Csomagold ki a ZIP-et a számítógépeden.
 2. Nyisd meg a Casa Guardians meglévő GitHub-repositoryját.
 3. Az `Add file → Upload files` menüpontban töltsd fel a kicsomagolt mappa TARTALMÁT a jelenlegi index.html mellé/helyére. Ne magát a ZIP-et és ne az azt körülvevő mappát töltsd fel.
-4. Az index.html, style.css és script.js felülírja a régieket. A privacy.html, thank-you.html és hero-villa.png új fájl. Az összes eredeti kép és a CNAME is a csomagban van.
+4. Az index.html felülírja a régit. Az oldal most tartalomazonosítóval ellátott casa-*.css és casa-*.js fájlokat használ, így a böngésző régi gyorsítótára nem keveri össze a régi és új megjelenést. Ezeket az új fájlokat is töltsd fel! A style.css és script.js szerkeszthető forráspéldányként a csomagban marad, de a HTML az új nevű fájlokat tölti. A privacy.html, thank-you.html és hero-villa.png új fájl. Az összes eredeti kép és a CNAME is a csomagban van.
 5. Kattints a `Commit changes` gombra. A meglévő GitHub Pages / Cloudflare közzétételi beállításaidat nem kell átírni.
 6. Várd meg a közzétételt, majd frissíts Ctrl+F5-tel. Az éles oldalon is ellenőrizd a képeket, a mobilmenüt, a Privacy Policy linket és az űrlapot.
 
@@ -66,3 +66,12 @@ Az eredeti Cloudflare Web Analytics kód megmaradt. A betűk Google Fontsról t�
 - Mobilmenü megnyitása és Escape-pel bezárása; kötelező mezők; szimulált hibás beküldéskor adatmegőrzés; szimulált sikeres beküldéskor állapotjelzés és ürítés: megfelelő.
 - Asztali nyitókép, referenciák és kapcsolat, valamint mobil nyitókép, űrlap és adatvédelmi oldal vizuálisan ellenőrizve. Az ellenőrzési környezetben a külső webfontok helyett a beállított tartalék betűk is megjelentek.
 - Élő FormSubmit-kézbesítés és a szolgáltatói aktiválás nem történt; ez feltöltés után ellenőrizendő.
+
+
+## Gyorsítótár-javítás
+
+A legújabb csomag összes fájlját töltsd fel együtt, az index.html, privacy.html és thank-you.html fájlokat is felülírva. Az új casa-*.css és casa-*.js fájlokat is töltsd fel. Ha a korábbi HTML maradna a böngészőben, nyomj Ctrl+F5-öt.
+
+
+## Új kiemelés
+A nyitókép alatt és az űrlap mellett is szerepel: helyszíni felmérés után 24 órán belüli írásos árajánlat; a megállapodott munkatartalomra a befejezésig változatlan ár; egyszerre egy projekt. A külön kért többletmunka árát előre kell egyeztetni. Az új CSS-fájl neve megváltozott, ezért a teljes csomagot töltsd fel.
