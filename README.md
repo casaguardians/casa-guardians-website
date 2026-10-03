@@ -75,3 +75,12 @@ A legújabb csomag összes fájlját töltsd fel együtt, az index.html, privacy
 
 ## Új kiemelés
 A nyitókép alatt és az űrlap mellett is szerepel: helyszíni felmérés után 24 órán belüli írásos árajánlat; a megállapodott munkatartalomra a befejezésig változatlan ár; egyszerre egy projekt. A külön kért többletmunka árát előre kell egyeztetni. Az új CSS-fájl neve megváltozott, ezért a teljes csomagot töltsd fel.
+
+
+## 2026-10-03 frissítés
+- Új **Property Cleaning** szolgáltatás került a Services részbe.
+- A kapcsolatfelvételi űrlap szolgáltatáslistája kiegészült **Wallpaper installation** és **Property cleaning** opciókkal.
+- Az Our Work rész végén új, szöveg nélküli **More of our work / Recent work** galéria van 5 új képpel.
+- A galériaképek kattintásra nagyíthatók; mobilon egyoszlopos elrendezésre váltanak.
+- Az új fotók WebP formátumban vannak optimalizálva.
+- Új kép hozzáadásához másold a WebP/JPG képet a weboldal gyökérmappájába, majd az `index.html` `work-gallery` blokkjában másolj le egy `gallery-item` gombot és írd át a fájlnevet + alt szöveget.
